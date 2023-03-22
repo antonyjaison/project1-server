@@ -25,7 +25,7 @@ const orderSchema = new Schema(
                     required: true,
                     validate: {
                         validator: (num) => {
-                            return Number.isInteger(num) && num >= 1;
+                            return num >= 1;
                         },
                         message: "{VALUE} is not integer greater than 0",
                     },
